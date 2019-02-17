@@ -166,30 +166,32 @@ let g:terminal_ansi_colors = [
 
 " Syntax Groups (descriptions and ordering from `:h w18`) {{{
 
+call s:h("Noise", { "fg": s:comment_grey }) " a noise - (){}.;
 call s:h("Comment", { "fg": s:comment_grey, "gui": "italic", "cterm": "italic" }) " any comment
-call s:h("Constant", { "fg": s:cyan }) " any constant
-call s:h("String", { "fg": s:green }) " a string constant: "this is a string"
+call s:h("Constant", { "fg": s:purple }) " any constant
+call s:h("String", { "fg": s:yellow }) " a string constant: "this is a string"
 call s:h("Character", { "fg": s:green }) " a character constant: 'c', '\n'
-call s:h("Number", { "fg": s:dark_yellow }) " a number constant: 234, 0xff
-call s:h("Boolean", { "fg": s:dark_yellow }) " a boolean constant: TRUE, false
-call s:h("Float", { "fg": s:dark_yellow }) " a floating point constant: 2.3e10
+call s:h("Number", { "fg": s:purple }) " a number constant: 234, 0xff
+call s:h("Boolean", { "fg": s:purple }) " a boolean constant: TRUE, false
+call s:h("Float", { "fg": s:purple }) " a floating point constant: 2.3e10
 call s:h("Identifier", { "fg": s:red }) " any variable name
-call s:h("Function", { "fg": s:blue }) " function name (also: methods for classes)
-call s:h("Statement", { "fg": s:purple }) " any statement
-call s:h("Conditional", { "fg": s:purple }) " if, then, else, endif, switch, etc.
-call s:h("Repeat", { "fg": s:purple }) " for, do, while, etc.
+call s:h("Function", { "fg": s:green }) " function name (also: methods for classes)
+call s:h("Statement", { "fg": s:red }) " any statement
+call s:h("Conditional", { "fg": s:red }) " if, then, else, endif, switch, etc.
+call s:h("Repeat", { "fg": s:red }) " for, do, while, etc.
 call s:h("Label", { "fg": s:purple }) " case, default, etc.
 call s:h("Operator", { "fg": s:purple }) " sizeof", "+", "*", etc.
+call s:h("OperatorChars", { "fg": s:red }) " sizeof", "+", "*", etc.
 call s:h("Keyword", { "fg": s:red }) " any other keyword
 call s:h("Exception", { "fg": s:purple }) " try, catch, throw
 call s:h("PreProc", { "fg": s:yellow }) " generic Preprocessor
-call s:h("Include", { "fg": s:blue }) " preprocessor #include
+call s:h("Include", { "fg": s:red }) " preprocessor #include
 call s:h("Define", { "fg": s:purple }) " preprocessor #define
 call s:h("Macro", { "fg": s:purple }) " same as Define
 call s:h("PreCondit", { "fg": s:yellow }) " preprocessor #if, #else, #endif, etc.
-call s:h("Type", { "fg": s:yellow }) " int, long, char, etc.
-call s:h("StorageClass", { "fg": s:yellow }) " static, register, volatile, etc.
-call s:h("Structure", { "fg": s:yellow }) " struct, union, enum, etc.
+call s:h("Type", { "fg": s:blue, "gui": "italic", "cterm": "italic" }) " int, long, char, etc.
+call s:h("StorageClass", { "fg": s:red, "gui": "italic", "cterm": "italic" }) " static, register, volatile, etc.
+call s:h("Structure", { "fg": s:blue, "gui": "italic", "cterm": "italic" }) " struct, union, enum, etc.
 call s:h("Typedef", { "fg": s:yellow }) " A typedef
 call s:h("Special", { "fg": s:blue }) " any special symbol
 call s:h("SpecialChar", {}) " special character in a constant
@@ -275,6 +277,10 @@ call s:h("debugBreakpoint", { "fg": s:black, "bg": s:red }) " a breakpoint
 " }}}
 
 " Language-Specific Highlighting {{{
+
+" C++
+call s:h("cppModifier", { "fg": s:red, "gui": "italic", "cterm": "italic" })
+call s:h("cPreCondit", { "fg": s:red })
 
 " CSS
 call s:h("cssAttrComma", { "fg": s:purple })
