@@ -192,7 +192,7 @@ call s:h("PreCondit", { "fg": s:yellow }) " preprocessor #if, #else, #endif, etc
 call s:h("Type", { "fg": s:blue, "gui": "italic", "cterm": "italic" }) " int, long, char, etc.
 call s:h("StorageClass", { "fg": s:red, "gui": "italic", "cterm": "italic" }) " static, register, volatile, etc.
 call s:h("Structure", { "fg": s:blue, "gui": "italic", "cterm": "italic" }) " struct, union, enum, etc.
-call s:h("Typedef", { "fg": s:yellow }) " A typedef
+call s:h("Typedef", { "fg": s:blue, "gui": "italic", "cterm": "italic" }) " A typedef
 call s:h("Special", { "fg": s:blue }) " any special symbol
 call s:h("SpecialChar", {}) " special character in a constant
 call s:h("Tag", {}) " you can use CTRL-] on this
@@ -246,7 +246,7 @@ call s:h("PmenuSbar", { "bg": s:special_grey }) " Popup menu: scrollbar.
 call s:h("PmenuThumb", { "bg": s:white }) " Popup menu: Thumb of the scrollbar.
 call s:h("Question", { "fg": s:purple }) " hit-enter prompt and yes/no questions
 call s:h("QuickFixLine", { "fg": s:black, "bg": s:yellow }) " Current quickfix item in the quickfix window.
-call s:h("Search", { "fg": s:black, "bg": s:yellow }) " Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+call s:h("Search", { "fg": s:white, "bg": s:special_grey }) " Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
 call s:h("SpecialKey", { "fg": s:special_grey }) " Meta and special keys listed with ":map", also for text used to show unprintable characters in the text, 'listchars'. Generally: text that is displayed differently from what it really is.
 call s:h("SpellBad", { "fg": s:red, "gui": "underline", "cterm": "underline" }) " Word that is not recognized by the spellchecker. This will be combined with the highlighting used otherwise.
 call s:h("SpellCap", { "fg": s:dark_yellow }) " Word that should start with a capital. This will be combined with the highlighting used otherwise.
@@ -285,12 +285,12 @@ call s:h("cPreCondit", { "fg": s:red })
 " CSS
 call s:h("cssAttrComma", { "fg": s:purple })
 call s:h("cssAttributeSelector", { "fg": s:green })
-call s:h("cssBraces", { "fg": s:white })
+call s:h("cssBraces", { "fg": s:comment_grey })
 call s:h("cssClassName", { "fg": s:dark_yellow })
 call s:h("cssClassNameDot", { "fg": s:dark_yellow })
 call s:h("cssDefinition", { "fg": s:purple })
-call s:h("cssFontAttr", { "fg": s:dark_yellow })
-call s:h("cssFontDescriptor", { "fg": s:purple })
+call s:h("cssFontAttr", { "fg": s:blue })
+call s:h("cssFontDescriptor", { "fg": s:red })
 call s:h("cssFunctionName", { "fg": s:blue })
 call s:h("cssIdentifier", { "fg": s:blue })
 call s:h("cssImportant", { "fg": s:purple })
@@ -298,10 +298,19 @@ call s:h("cssInclude", { "fg": s:white })
 call s:h("cssIncludeKeyword", { "fg": s:purple })
 call s:h("cssMediaType", { "fg": s:dark_yellow })
 call s:h("cssProp", { "fg": s:white })
-call s:h("cssPseudoClassId", { "fg": s:dark_yellow })
+call s:h("cssPseudoClassId", { "fg": s:blue })
 call s:h("cssSelectorOp", { "fg": s:purple })
 call s:h("cssSelectorOp2", { "fg": s:purple })
 call s:h("cssTagName", { "fg": s:red })
+
+call s:h("cssPositioningAttr", { "fg": s:blue })
+call s:h("cssBackgroundAttr", { "fg": s:blue })
+call s:h("cssCommonAttr", { "fg": s:blue })
+call s:h("cssUnitDecorators", { "fg": s:red })
+call s:h("cssBoxAttr", { "fg": s:blue })
+call s:h("cssTextAttr", { "fg": s:blue })
+call s:h("cssPseudoClassFn", { "fg": s:green })
+call s:h("cssFlexibleBoxAttr", { "fg": s:blue })
 
 " Fish Shell
 call s:h("fishKeyword", { "fg": s:purple })
@@ -312,14 +321,15 @@ call s:h("goDeclaration", { "fg": s:purple })
 
 " HTML
 call s:h("htmlTitle", { "fg": s:white })
-call s:h("htmlArg", { "fg": s:dark_yellow })
-call s:h("htmlEndTag", { "fg": s:white })
+call s:h("htmlArg", { "fg": s:blue, "gui": "italic", "cterm": "italic" })
+call s:h("htmlEndTag", { "fg": s:comment_grey })
 call s:h("htmlH1", { "fg": s:white })
 call s:h("htmlLink", { "fg": s:purple })
 call s:h("htmlSpecialChar", { "fg": s:dark_yellow })
 call s:h("htmlSpecialTagName", { "fg": s:red })
 call s:h("htmlTag", { "fg": s:white })
 call s:h("htmlTagName", { "fg": s:red })
+call s:h("htmlScriptTag", { "fg": s:comment_grey })
 
 " JavaScript
 call s:h("javaScriptBraces", { "fg": s:white })
@@ -335,15 +345,15 @@ call s:h("jsClassKeyword", { "fg": s:purple })
 call s:h("jsClassMethodType", { "fg": s:purple })
 call s:h("jsDocParam", { "fg": s:blue })
 call s:h("jsDocTags", { "fg": s:purple })
-call s:h("jsExport", { "fg": s:purple })
-call s:h("jsExportDefault", { "fg": s:purple })
+call s:h("jsExport", { "fg": s:red })
+call s:h("jsExportDefault", { "fg": s:red })
 call s:h("jsExtendsKeyword", { "fg": s:purple })
 call s:h("jsFrom", { "fg": s:purple })
 call s:h("jsFuncCall", { "fg": s:blue })
 call s:h("jsFunction", { "fg": s:purple })
 call s:h("jsGenerator", { "fg": s:yellow })
-call s:h("jsGlobalObjects", { "fg": s:yellow })
-call s:h("jsImport", { "fg": s:purple })
+call s:h("jsGlobalObjects", { "fg": s:blue })
+call s:h("jsImport", { "fg": s:red })
 call s:h("jsModuleAs", { "fg": s:purple })
 call s:h("jsModuleWords", { "fg": s:purple })
 call s:h("jsModules", { "fg": s:purple })
@@ -455,6 +465,13 @@ call s:h("phpMagicConstants", { "fg": s:dark_yellow })
 call s:h("phpSuperglobals", { "fg": s:red })
 call s:h("phpConstants", { "fg": s:dark_yellow })
 
+" Pug
+call s:h("pugTag", { "fg": s:red })
+call s:h("pugAttributesDelimiter", { "fg": s:purple })
+call s:h("pugAttributes", { "fg": s:blue, "gui": "italic", "cterm": "italic" })
+call s:h("pugAttrAssignment", { "fg": s:comment_grey })
+call s:h("pugBlockExpansionChar", { "fg": s:comment_grey })
+
 " Ruby
 call s:h("rubyBlockParameter", { "fg": s:red})
 call s:h("rubyBlockParameterList", { "fg": s:red })
@@ -478,26 +495,34 @@ call s:h("rubySymbol", { "fg": s:cyan})
 " Sass
 " https://github.com/tpope/vim-haml
 call s:h("sassAmpersand", { "fg": s:red })
-call s:h("sassClass", { "fg": s:dark_yellow })
+call s:h("sassClass", { "fg": s:green, "gui": "italic", "cterm": "italic" })
 call s:h("sassControl", { "fg": s:purple })
 call s:h("sassExtend", { "fg": s:purple })
 call s:h("sassFor", { "fg": s:white })
 call s:h("sassFunction", { "fg": s:cyan })
 call s:h("sassId", { "fg": s:blue })
-call s:h("sassInclude", { "fg": s:purple })
-call s:h("sassMedia", { "fg": s:purple })
-call s:h("sassMediaOperators", { "fg": s:white })
-call s:h("sassMixin", { "fg": s:purple })
-call s:h("sassMixinName", { "fg": s:blue })
-call s:h("sassMixing", { "fg": s:purple })
+call s:h("sassInclude", { "fg": s:red })
+call s:h("sassMedia", { "fg": s:red })
+call s:h("sassMediaOperators", { "fg": s:red })
+call s:h("sassMediaQuery", { "fg": s:blue })
+call s:h("sassMixin", { "fg": s:red })
+call s:h("sassMixinName", { "fg": s:green })
+call s:h("sassMixing", { "fg": s:red })
 call s:h("sassVariable", { "fg": s:purple })
 " https://github.com/cakebaker/scss-syntax.vim
 call s:h("scssExtend", { "fg": s:purple })
-call s:h("scssImport", { "fg": s:purple })
-call s:h("scssInclude", { "fg": s:purple })
+call s:h("scssImport", { "fg": s:red })
+call s:h("scssInclude", { "fg": s:red })
 call s:h("scssMixin", { "fg": s:purple })
-call s:h("scssSelectorName", { "fg": s:dark_yellow })
+call s:h("scssSelectorName", { "fg": s:green, "gui": "italic", "cterm": "italic" })
+call s:h("scssSelectorChar", { "fg": s:comment_grey })
 call s:h("scssVariable", { "fg": s:purple })
+" Extra
+call s:h("sassCssAttribute", { "fg": s:blue })
+call s:h("sassClassChar", { "fg": s:comment_grey })
+call s:h("scssAttrSeparator", { "fg": s:comment_grey })
+call s:h("scssAttrSeparator2", { "fg": s:comment_grey })
+call s:h("scssAttribute", { "fg": s:blue })
 
 " TypeScript
 call s:h("typescriptReserved", { "fg": s:purple })
@@ -509,6 +534,14 @@ call s:h("xmlAttrib", { "fg": s:dark_yellow })
 call s:h("xmlEndTag", { "fg": s:red })
 call s:h("xmlTag", { "fg": s:red })
 call s:h("xmlTagName", { "fg": s:red })
+
+" Vue
+call s:h("vueSurroundingTag", { "fg": s:comment_grey })
+call s:h("vueTemplateTag", { "fg": s:comment_grey })
+call s:h("vueEndTag", { "fg": s:comment_grey })
+call s:h("vueScriptTag", { "fg": s:comment_grey })
+call s:h("vueTag", { "fg": s:comment_grey })
+call s:h("vueSpecialTagName", { "fg": s:red })
 
 " }}}
 
