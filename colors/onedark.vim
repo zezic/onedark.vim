@@ -470,6 +470,7 @@ call s:h("pugTag", { "fg": s:red })
 call s:h("pugAttributesDelimiter", { "fg": s:purple })
 call s:h("pugAttributes", { "fg": s:blue, "gui": "italic", "cterm": "italic" })
 call s:h("pugAttrAssignment", { "fg": s:comment_grey })
+call s:h("pugAttrSeparator", { "fg": s:comment_grey })
 call s:h("pugBlockExpansionChar", { "fg": s:comment_grey })
 
 " Ruby
@@ -523,6 +524,8 @@ call s:h("sassClassChar", { "fg": s:comment_grey })
 call s:h("scssAttrSeparator", { "fg": s:comment_grey })
 call s:h("scssAttrSeparator2", { "fg": s:comment_grey })
 call s:h("scssAttribute", { "fg": s:blue })
+call s:h("scssAmpersand", { "fg": s:red })
+call s:h("scssIncludeChar", { "fg": s:comment_grey })
 
 " TypeScript
 call s:h("typescriptReserved", { "fg": s:purple })
