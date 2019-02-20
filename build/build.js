@@ -35,7 +35,7 @@ const specialColors = Object.freeze({
 	comment_grey: { gui: '#5A555C', cterm: '59', cterm16: '15' },
 	gutter_fg_grey: { gui: '#5A555C', cterm: '238', cterm16: '15' },
 	cursor_grey:  { gui: '#464247', cterm: '236', cterm16: '8' },
-	visual_grey: { gui: '#4E494F', cterm: '237', cterm16: '15' },
+	visual_grey: { gui: '#39363B', cterm: '237', cterm16: '15' },
 	menu_grey: { cterm16: '8' }, // vim theme handles gui/cterm values
 	special_grey: { gui: '#4E494F', cterm: '238', cterm16: '15' },
 	vertsplit: { gui: '#1E1C1F', cterm: '59', cterm16: '15' },
