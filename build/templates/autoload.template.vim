@@ -14,6 +14,8 @@ let s:colors = {
       \ "white": get(s:overrides, "white", { "gui": "<%=it.white.gui%>", "cterm": "<%=it.white.cterm%>", "cterm16": "<%=it.white.cterm16%>" }),
       \ "black": get(s:overrides, "black", { "gui": "<%=it.black.gui%>", "cterm": "<%=it.black.cterm%>", "cterm16": "<%=it.black.cterm16%>" }),
       \ "visual_black": get(s:overrides, "visual_black", { "gui": "NONE", "cterm": "NONE", "cterm16": "<%=it.black.cterm16%>" }),
+      \ "neutral": get(s:overrides, "neutral", { "gui": "<%=it.neutral.gui%>", "cterm": "<%=it.neutral.cterm%>", "cterm16": "<%=it.neutral.cterm16%>" }),
+      \ "neutral_2": get(s:overrides, "neutral_2", { "gui": "<%=it.neutral_2.gui%>", "cterm": "<%=it.neutral_2.cterm%>", "cterm16": "<%=it.neutral_2.cterm16%>" }),
       \ "comment_grey": get(s:overrides, "comment_grey", { "gui": "<%=it.comment_grey.gui%>", "cterm": "<%=it.comment_grey.cterm%>", "cterm16": "<%=it.comment_grey.cterm16%>" }),
       \ "gutter_fg_grey": get(s:overrides, "gutter_fg_grey", { "gui": "<%=it.gutter_fg_grey.gui%>", "cterm": "<%=it.gutter_fg_grey.cterm%>", "cterm16": "<%=it.gutter_fg_grey.cterm16%>" }),
       \ "cursor_grey": get(s:overrides, "cursor_grey", { "gui": "<%=it.cursor_grey.gui%>", "cterm": "<%=it.cursor_grey.cterm%>", "cterm16": "<%=it.cursor_grey.cterm16%>" }),

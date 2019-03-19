@@ -32,6 +32,8 @@ const baseColors = Object.freeze({
 })
 
 const specialColors = Object.freeze({
+	neutral: { gui: '#E8E8E6', cterm: '59', cterm16: '15' },
+	neutral_2: { gui: '#A3A3A2', cterm: '59', cterm16: '15' },
 	comment_grey: { gui: '#5A555C', cterm: '59', cterm16: '15' },
 	gutter_fg_grey: { gui: '#5A555C', cterm: '238', cterm16: '15' },
 	cursor_grey:  { gui: '#464247', cterm: '236', cterm16: '8' },

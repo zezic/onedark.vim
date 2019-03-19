@@ -14,6 +14,8 @@ let s:colors = {
       \ "white": get(s:overrides, "white", { "gui": "#FCFCFA", "cterm": "145", "cterm16": "7" }),
       \ "black": get(s:overrides, "black", { "gui": "#29272A", "cterm": "235", "cterm16": "0" }),
       \ "visual_black": get(s:overrides, "visual_black", { "gui": "NONE", "cterm": "NONE", "cterm16": "0" }),
+      \ "neutral": get(s:overrides, "neutral", { "gui": "#E8E8E6", "cterm": "59", "cterm16": "15" }),
+      \ "neutral_2": get(s:overrides, "neutral_2", { "gui": "#A3A3A2", "cterm": "59", "cterm16": "15" }),
       \ "comment_grey": get(s:overrides, "comment_grey", { "gui": "#5A555C", "cterm": "59", "cterm16": "15" }),
       \ "gutter_fg_grey": get(s:overrides, "gutter_fg_grey", { "gui": "#5A555C", "cterm": "238", "cterm16": "15" }),
       \ "cursor_grey": get(s:overrides, "cursor_grey", { "gui": "#464247", "cterm": "236", "cterm16": "8" }),

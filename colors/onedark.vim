@@ -142,6 +142,8 @@ let s:purple = s:colors.purple
 let s:cyan = s:colors.cyan
 let s:white = s:colors.white
 let s:black = s:colors.black
+let s:neutral = s:colors.neutral
+let s:neutral_2 = s:colors.neutral_2
 let s:visual_black = s:colors.visual_black " Black out selected text in 16-color visual mode
 let s:comment_grey = s:colors.comment_grey
 let s:gutter_fg_grey = s:colors.gutter_fg_grey
@@ -563,6 +565,9 @@ call s:h("xmlNamespace", { "fg": s:dark_yellow })
 call s:h("xmlEntityPunct", { "fg": s:comment_grey })
 call s:h("xmlEntity", { "fg": s:purple })
 
+" Vim
+call s:h("vimOption", { "fg": s:blue })
+
 " Vue
 call s:h("vueSurroundingTag", { "fg": s:comment_grey })
 call s:h("vueTemplateTag", { "fg": s:comment_grey })
@@ -625,6 +630,23 @@ hi link gitcommitSelected gitcommitComment
 hi link gitcommitDiscardedArrow gitcommitDiscardedFile
 hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
+
+" }}}
+
+" Vimfiler {{{
+
+call s:h("vimfilerLeaf", { "fg": s:comment_grey })
+call s:h("vimfilerNonMark", { "fg": s:comment_grey })
+call s:h("vimfilerOpenedFile", { "fg": s:neutral_2 })
+call s:h("vimfilerClosedFile", { "fg": s:comment_grey })
+call s:h("vimfilerNormalFile", { "fg": s:neutral })
+
+" Tagbar
+call s:h("tagbarFoldIcon", { "fg": s:neutral_2 })
+call s:h("tagbarNestedKind", { "fg": s:neutral_2 })
+call s:h("tagbarVisibilityPublic", { "fg": s:green })
+call s:h("tagbarVisibilityProtected", { "fg": s:yellow })
+call s:h("tagbarVisibilityPrivate", { "fg": s:dark_red })
 
 " }}}
 
