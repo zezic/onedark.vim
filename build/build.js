@@ -18,6 +18,7 @@ doT.templateSettings = {
 	strip: false, // preserve whitespace
 }
 
+// Monokai Pro
 /*
 const baseColors = Object.freeze({
 	red: { gui: '#FF6188', cterm: '204', cterm16: '1' }, // alternate cterm: 168
@@ -33,6 +34,8 @@ const baseColors = Object.freeze({
 })
 */
 
+// Monokai Pro Machine
+/*
 const baseColors = Object.freeze({
 	red: { gui: '#ff6d7e', cterm: '204', cterm16: '1' }, // alternate cterm: 168
 	dark_red: { gui: '#ff6d7e', cterm: '196', cterm16: '9' },
@@ -54,9 +57,65 @@ const specialColors = Object.freeze({
 	cursor_grey:  { gui: '#5B6466', cterm: '236', cterm16: '8' },
 	visual_grey: { gui: '#505759', cterm: '237', cterm16: '15' },
 	menu_grey: { cterm16: '8' }, // vim theme handles gui/cterm values
-	special_grey: { gui: '#505759', cterm: '238', cterm16: '15' },
+	special_grey: { gui: '#3B4A52', cterm: '238', cterm16: '15' },
 	vertsplit: { gui: '#1D2529', cterm: '59', cterm16: '15' },
 })
+*/
+
+/*
+const baseColors = Object.freeze({
+	red: { gui: '#924650', cterm: '204', cterm16: '1' }, // alternate cterm: 168
+	dark_red: { gui: '#854049', cterm: '196', cterm16: '9' },
+	green: { gui: '#666666', cterm: '114', cterm16: '2' },
+	yellow: { gui: '#BA9864', cterm: '180', cterm16: '3' },
+	dark_yellow: { gui: '#BA8C64', cterm: '173', cterm16: '11' },
+	blue: { gui: '#888888', cterm: '39', cterm16: '4' }, // alternate cterm: 75
+	purple: { gui: '#4F8396', cterm: '170',  cterm16: '5' }, // alternate cterm: 176
+	cyan: { gui: '#777777', cterm: '38', cterm16: '6' }, // alternate cterm: 73
+	white: { gui: '#C2C2B0', cterm: '145', cterm16 : '7' },
+	black: { gui: '#222222', cterm: '235', cterm16: '0' }
+})
+
+const specialColors = Object.freeze({
+	neutral: { gui: '#727265', cterm: '59', cterm16: '15' },
+	neutral_2: { gui: '#616156', cterm: '59', cterm16: '15' },
+	comment_grey: { gui: '#616156', cterm: '59', cterm16: '15' },
+	gutter_fg_grey: { gui: '#616156', cterm: '238', cterm16: '15' },
+	cursor_grey:  { gui: '#7D7D6F', cterm: '236', cterm16: '8' },
+	visual_grey: { gui: '#454545', cterm: '237', cterm16: '15' },
+	menu_grey: { cterm16: '8' }, // vim theme handles gui/cterm values
+	special_grey: { gui: '#454545', cterm: '238', cterm16: '15' },
+	vertsplit: { gui: '#141414', cterm: '59', cterm16: '15' },
+})
+*/
+
+// Monokai Pro Octagon
+
+const baseColors = Object.freeze({
+	red: { gui: '#ff657a', cterm: '204', cterm16: '1' }, // alternate cterm: 168
+	dark_red: { gui: '#ff657a', cterm: '196', cterm16: '9' },
+	green: { gui: '#bad761', cterm: '114', cterm16: '2' },
+	yellow: { gui: '#ffd76d', cterm: '180', cterm16: '3' },
+	dark_yellow: { gui: '#ff9b5e', cterm: '173', cterm16: '11' },
+	blue: { gui: '#9cd1bb', cterm: '39', cterm16: '4' }, // alternate cterm: 75
+	purple: { gui: '#c39ac9', cterm: '170',  cterm16: '5' }, // alternate cterm: 176
+	cyan: { gui: '#9cd1bb', cterm: '38', cterm16: '6' }, // alternate cterm: 73
+	white: { gui: '#eaf2f1', cterm: '145', cterm16 : '7' },
+	black: { gui: '#282a3a', cterm: '235', cterm16: '0' }
+})
+
+const specialColors = Object.freeze({
+	neutral: { gui: '#9EA3B3', cterm: '59', cterm16: '15' },
+	neutral_2: { gui: '#878C99', cterm: '59', cterm16: '15' },
+	comment_grey: { gui: '#696d77', cterm: '59', cterm16: '15' },
+	gutter_fg_grey: { gui: '#696d77', cterm: '238', cterm16: '15' },
+	cursor_grey:  { gui: '#656973', cterm: '236', cterm16: '8' },
+	visual_grey: { gui: '#43465C', cterm: '237', cterm16: '15' },
+	menu_grey: { cterm16: '8' }, // vim theme handles gui/cterm values
+	special_grey: { gui: '#43465C', cterm: '238', cterm16: '15' },
+	vertsplit: { gui: '#1E1F2B', cterm: '59', cterm16: '15' },
+})
+
 
 const colors = Object.assign({}, baseColors, specialColors)
 
