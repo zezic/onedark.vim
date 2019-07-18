@@ -333,12 +333,12 @@ call s:h("goDeclaration", { "fg": s:purple })
 " HTML
 call s:h("htmlTitle", { "fg": s:white })
 call s:h("htmlArg", { "fg": s:blue, "gui": "italic", "cterm": "italic" })
+call s:h("htmlTag", { "fg": s:comment_grey })
 call s:h("htmlEndTag", { "fg": s:comment_grey })
 call s:h("htmlH1", { "fg": s:white })
 call s:h("htmlLink", { "fg": s:purple })
 call s:h("htmlSpecialChar", { "fg": s:purple })
 call s:h("htmlSpecialTagName", { "fg": s:red })
-call s:h("htmlTag", { "fg": s:white })
 call s:h("htmlTagName", { "fg": s:red })
 call s:h("htmlScriptTag", { "fg": s:comment_grey })
 

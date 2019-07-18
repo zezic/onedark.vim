@@ -19,7 +19,7 @@ doT.templateSettings = {
 }
 
 // Monokai Pro
-/*
+
 const baseColors = Object.freeze({
 	red: { gui: '#FF6188', cterm: '204', cterm16: '1' }, // alternate cterm: 168
 	dark_red: { gui: '#E64069', cterm: '196', cterm16: '9' },
@@ -32,7 +32,19 @@ const baseColors = Object.freeze({
 	white: { gui: '#FCFCFA', cterm: '145', cterm16 : '7' },
 	black: { gui: '#29272A', cterm: '235', cterm16: '0' }
 })
-*/
+
+const specialColors = Object.freeze({
+	neutral: { gui: '#727265', cterm: '59', cterm16: '15' },
+	neutral_2: { gui: '#616156', cterm: '59', cterm16: '15' },
+	comment_grey: { gui: '#616156', cterm: '59', cterm16: '15' },
+	gutter_fg_grey: { gui: '#616156', cterm: '238', cterm16: '15' },
+	cursor_grey:  { gui: '#7D7D6F', cterm: '236', cterm16: '8' },
+	visual_grey: { gui: '#454545', cterm: '237', cterm16: '15' },
+	menu_grey: { cterm16: '8' }, // vim theme handles gui/cterm values
+	special_grey: { gui: '#454545', cterm: '238', cterm16: '15' },
+	vertsplit: { gui: '#141414', cterm: '59', cterm16: '15' },
+})
+
 
 // Monokai Pro Machine
 /*
@@ -62,6 +74,7 @@ const specialColors = Object.freeze({
 })
 */
 
+// Slurm
 /*
 const baseColors = Object.freeze({
 	red: { gui: '#924650', cterm: '204', cterm16: '1' }, // alternate cterm: 168
@@ -90,7 +103,7 @@ const specialColors = Object.freeze({
 */
 
 // Monokai Pro Octagon
-
+/*
 const baseColors = Object.freeze({
 	red: { gui: '#ff657a', cterm: '204', cterm16: '1' }, // alternate cterm: 168
 	dark_red: { gui: '#ff657a', cterm: '196', cterm16: '9' },
@@ -115,7 +128,7 @@ const specialColors = Object.freeze({
 	special_grey: { gui: '#43465C', cterm: '238', cterm16: '15' },
 	vertsplit: { gui: '#1E1F2B', cterm: '59', cterm16: '15' },
 })
-
+*/
 
 const colors = Object.assign({}, baseColors, specialColors)
 
