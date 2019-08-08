@@ -182,10 +182,10 @@ call s:h("Statement", { "fg": s:red }) " any statement
 call s:h("Conditional", { "fg": s:red }) " if, then, else, endif, switch, etc.
 call s:h("Repeat", { "fg": s:red }) " for, do, while, etc.
 call s:h("Label", { "fg": s:purple }) " case, default, etc.
-call s:h("Operator", { "fg": s:purple }) " sizeof", "+", "*", etc.
+call s:h("Operator", { "fg": s:red }) " sizeof", "+", "*", etc.
 call s:h("OperatorChars", { "fg": s:red }) " sizeof", "+", "*", etc.
 call s:h("Keyword", { "fg": s:red }) " any other keyword
-call s:h("Exception", { "fg": s:purple }) " try, catch, throw
+call s:h("Exception", { "fg": s:red }) " try, catch, throw
 call s:h("PreProc", { "fg": s:yellow }) " generic Preprocessor
 call s:h("Include", { "fg": s:red }) " preprocessor #include
 call s:h("Define", { "fg": s:purple }) " preprocessor #define
@@ -198,7 +198,7 @@ call s:h("Typedef", { "fg": s:blue, "gui": "italic", "cterm": "italic" }) " A ty
 call s:h("Special", { "fg": s:blue }) " any special symbol
 call s:h("SpecialChar", { "fg": s:purple }) " special character in a constant
 call s:h("Tag", {}) " you can use CTRL-] on this
-call s:h("Delimiter", {}) " character that needs attention
+call s:h("Delimiter", { "fg": s:comment_grey }) " character that needs attention
 call s:h("SpecialComment", { "fg": s:comment_grey }) " special things inside a comment
 call s:h("Debug", {}) " debugging statements
 call s:h("Underlined", { "gui": "underline", "cterm": "underline" }) " text that stands out, HTML links
@@ -487,6 +487,13 @@ call s:h("pugAttributes", { "fg": s:blue, "gui": "italic", "cterm": "italic" })
 call s:h("pugAttrAssignment", { "fg": s:comment_grey })
 call s:h("pugAttrSeparator", { "fg": s:comment_grey })
 call s:h("pugBlockExpansionChar", { "fg": s:comment_grey })
+
+" Python
+call s:h("pythonBuiltinFunc", { "fg": s:blue, "gui": "italic", "cterm": "italic" })
+call s:h("pythonDefine", { "fg": s:blue, "gui": "italic", "cterm": "italic" })
+call s:h("pythonKeywordArgument", { "fg": s:dark_yellow, "gui": "italic", "cterm": "italic" })
+call s:h("pythonParenthesis", { "fg": s:comment_grey })
+call s:h("pythonStrFormat", { "fg": s:purple })
 
 " Ruby
 call s:h("rubyBlockParameter", { "fg": s:red})

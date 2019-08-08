@@ -18,8 +18,36 @@ doT.templateSettings = {
 	strip: false, // preserve whitespace
 }
 
-// Monokai Pro
+// Monokai Classic
 
+const baseColors = Object.freeze({
+	red: { gui: '#f82570', cterm: '204', cterm16: '1' }, // alternate cterm: 168
+	dark_red: { gui: '#ff387f', cterm: '196', cterm16: '9' },
+	green: { gui: '#a6e12d', cterm: '114', cterm16: '2' },
+	yellow: { gui: '#f0e779', cterm: '180', cterm16: '3' },
+	dark_yellow: { gui: '#FD971F', cterm: '173', cterm16: '11' },
+	blue: { gui: '#66c6ee', cterm: '39', cterm16: '4' }, // alternate cterm: 75
+	purple: { gui: '#ae81ff', cterm: '170',  cterm16: '5' }, // alternate cterm: 176
+	cyan: { gui: '#66d9ee', cterm: '38', cterm16: '6' }, // alternate cterm: 73
+	white: { gui: '#fdfff1', cterm: '145', cterm16 : '7' },
+	black: { gui: '#272821', cterm: '235', cterm16: '0' }
+})
+
+const specialColors = Object.freeze({
+	neutral: { gui: '#6e7066', cterm: '59', cterm16: '15' },
+	neutral_2: { gui: '#727265', cterm: '59', cterm16: '15' },
+	comment_grey: { gui: '#545747', cterm: '59', cterm16: '15' },
+	gutter_fg_grey: { gui: '#6e7066', cterm: '238', cterm16: '15' },
+	cursor_grey:  { gui: '#45473a', cterm: '236', cterm16: '8' },
+	visual_grey: { gui: '#45473a', cterm: '237', cterm16: '15' },
+	menu_grey: { cterm16: '8' }, // vim theme handles gui/cterm values
+	special_grey: { gui: '#3b3d32', cterm: '238', cterm16: '15' },
+	vertsplit: { gui: '#2e2f27', cterm: '59', cterm16: '15' },
+})
+
+
+// Monokai Pro
+/*
 const baseColors = Object.freeze({
 	red: { gui: '#FF6188', cterm: '204', cterm16: '1' }, // alternate cterm: 168
 	dark_red: { gui: '#E64069', cterm: '196', cterm16: '9' },
@@ -44,7 +72,7 @@ const specialColors = Object.freeze({
 	special_grey: { gui: '#454545', cterm: '238', cterm16: '15' },
 	vertsplit: { gui: '#141414', cterm: '59', cterm16: '15' },
 })
-
+*/
 
 // Monokai Pro Machine
 /*
@@ -127,6 +155,62 @@ const specialColors = Object.freeze({
 	menu_grey: { cterm16: '8' }, // vim theme handles gui/cterm values
 	special_grey: { gui: '#43465C', cterm: '238', cterm16: '15' },
 	vertsplit: { gui: '#1E1F2B', cterm: '59', cterm16: '15' },
+})
+*/
+
+// Dotshare
+/*
+const baseColors = Object.freeze({
+	red: { gui: '#e84f4f', cterm: '204', cterm16: '1' }, // alternate cterm: 168
+	dark_red: { gui: '#d23d3d', cterm: '196', cterm16: '9' },
+	green: { gui: '#a0cf5d', cterm: '114', cterm16: '2' },
+	yellow: { gui: '#e1aa5d', cterm: '180', cterm16: '3' },
+	dark_yellow: { gui: '#f39d21', cterm: '173', cterm16: '11' },
+	blue: { gui: '#7dc1cf', cterm: '39', cterm16: '4' }, // alternate cterm: 75
+	purple: { gui: '#9b64fb', cterm: '170',  cterm16: '5' }, // alternate cterm: 176
+	cyan: { gui: '#6d878d', cterm: '38', cterm16: '6' }, // alternate cterm: 73
+	white: { gui: '#d7d0c7', cterm: '145', cterm16 : '7' },
+	black: { gui: '#151515', cterm: '235', cterm16: '0' }
+})
+
+const specialColors = Object.freeze({
+	neutral: { gui: '#727265', cterm: '59', cterm16: '15' },
+	neutral_2: { gui: '#616156', cterm: '59', cterm16: '15' },
+	comment_grey: { gui: '#616156', cterm: '59', cterm16: '15' },
+	gutter_fg_grey: { gui: '#616156', cterm: '238', cterm16: '15' },
+	cursor_grey:  { gui: '#7D7D6F', cterm: '236', cterm16: '8' },
+	visual_grey: { gui: '#454545', cterm: '237', cterm16: '15' },
+	menu_grey: { cterm16: '8' }, // vim theme handles gui/cterm values
+	special_grey: { gui: '#454545', cterm: '238', cterm16: '15' },
+	vertsplit: { gui: '#141414', cterm: '59', cterm16: '15' },
+})
+*/
+
+// Lambda Complex
+/*
+const baseColors = Object.freeze({
+	red: { gui: '#cb712a', cterm: '204', cterm16: '1' }, // alternate cterm: 168
+	dark_red: { gui: '#cb712a', cterm: '196', cterm16: '9' },
+	green: { gui: '#cc7c34', cterm: '114', cterm16: '2' },
+	yellow: { gui: '#c38e45', cterm: '180', cterm16: '3' },
+	dark_yellow: { gui: '#c38e45', cterm: '173', cterm16: '11' },
+	blue: { gui: '#767b6f', cterm: '39', cterm16: '4' }, // alternate cterm: 75
+	purple: { gui: '#9fafaf', cterm: '170',  cterm16: '5' }, // alternate cterm: 176
+	cyan: { gui: '#86a3a4', cterm: '38', cterm16: '6' }, // alternate cterm: 73
+	white: { gui: '#767b6f', cterm: '145', cterm16 : '7' },
+	black: { gui: '#181818', cterm: '235', cterm16: '0' }
+})
+
+const specialColors = Object.freeze({
+	neutral: { gui: '#727265', cterm: '59', cterm16: '15' },
+	neutral_2: { gui: '#616156', cterm: '59', cterm16: '15' },
+	comment_grey: { gui: '#616156', cterm: '59', cterm16: '15' },
+	gutter_fg_grey: { gui: '#616156', cterm: '238', cterm16: '15' },
+	cursor_grey:  { gui: '#7D7D6F', cterm: '236', cterm16: '8' },
+	visual_grey: { gui: '#454545', cterm: '237', cterm16: '15' },
+	menu_grey: { cterm16: '8' }, // vim theme handles gui/cterm values
+	special_grey: { gui: '#454545', cterm: '238', cterm16: '15' },
+	vertsplit: { gui: '#141414', cterm: '59', cterm16: '15' },
 })
 */
 

@@ -2,33 +2,33 @@
 colors:
   # Default colors
   primary:
-    background: '0x29272a'
-    foreground: '0xfcfcfa'
+    background: '0x272821'
+    foreground: '0xfdfff1'
 
   # Cursor colors
   cursor:
-    background: '0xfcfcfa'
-    foreground: '0x29272a'
+    background: '0xfdfff1'
+    foreground: '0x272821'
 
   # Normal colors
   normal:
-    black:   '0x29272a'
-    red:     '0xff6188'
-    green:   '0xa9dc76'
-    yellow:  '0xffd866'
-    blue:    '0x78dce8'
-    magenta: '0xab9df2'
-    cyan:    '0x78e8d7'
-    white:   '0xfcfcfa'
+    black:   '0x272821'
+    red:     '0xf82570'
+    green:   '0xa6e12d'
+    yellow:  '0xf0e779'
+    blue:    '0x66c6ee'
+    magenta: '0xae81ff'
+    cyan:    '0x66d9ee'
+    white:   '0xfdfff1'
 
   # Bright colors
   bright:
-    black:   '0x454545'
-    red:     '0xe64069'
-    green:   '0xa9dc76'
-    yellow:  '0xfc9867'
-    blue:    '0x78dce8'
-    magenta: '0xab9df2'
-    cyan:    '0x78e8d7'
-    white:   '0x616156'
+    black:   '0x45473a'
+    red:     '0xff387f'
+    green:   '0xa6e12d'
+    yellow:  '0xfd971f'
+    blue:    '0x66c6ee'
+    magenta: '0xae81ff'
+    cyan:    '0x66d9ee'
+    white:   '0x545747'
 
